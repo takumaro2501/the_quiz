@@ -25,27 +25,49 @@
       background-color: black;
     }
 
-    .mainimage{
-      text-align: center;
-      width: 100%;
-      height: 400px;
-      margin: 0;
-      padding: 0;
+    .wrapper{
+      max-width: 1000px;
+      margin: 0 auto;
     }
+    .mainimage{
+      width: 100%;
+      height: 0;
+      margin: 0;
+      padding: 50% 50px 0;
+      background-image: url(img/the_quiz.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center ,top;
+    }
+
+    @media screen and (max-width: 600px){
+
+      .d-flex{
+        flex-direction: column;
+      }
+
+      .ml-2{
+        margin-bottom: 30px;
+        height: 70px;
+      }
+    }
+
   </style>
 </head>
 
 <body>
-  <p class="mainimage"><img src="img/the_quiz.png" alt="The・Quiz"></p>
-  <div class="container">
-    <div class="mt-3 alert alert-dark text-danger" role="alert" id="js-question">
-      A simple primary alert—check it out!
-    </div>
-    <div class="d-flex justify-content-center">
-      <button type="button" class="btn btn-dark text-danger">Primary</button>
-      <button type="button" class="ml-2 btn btn-dark text-danger">Primary</button>
-      <button type="button" class="ml-2 btn btn-dark text-danger">Primary</button>
-      <button type="button" class="ml-2 btn btn-dark text-danger">Primary</button>
+  <div class="wrapper">
+    <p class="mainimage"></p>
+    <div class="container">
+      <div class="mt-3 alert alert-dark text-danger" role="alert" id="js-question">
+        A simple primary alert—check it out!
+      </div>
+      <div class="d-flex justify-content-center">
+        <button type="button" class="ml-2 btn btn-dark text-danger">Primary</button>
+        <button type="button" class="ml-2 btn btn-dark text-danger">Primary</button>
+        <button type="button" class="ml-2 btn btn-dark text-danger">Primary</button>
+        <button type="button" class="ml-2 btn btn-dark text-danger">Primary</button>
+      </div>
     </div>
   </div>
 
