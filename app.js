@@ -66,7 +66,11 @@ const clickHandler = (e) => {
     setupQuiz();
   }else{
     // 問題数がなければこちらを実行
-    window.alert('終了！あなたの正解数は'+ score + '/' + quizLength + 'です！')
+    window.alert('終了！あなたの正解数は'+ score + '/' + quizLength + 'です！');
+    // 初期化
+    score= 0;
+    quizIndex = 0;
+    setupQuiz();
   }
 
 };
